@@ -38,10 +38,7 @@ const User = () => {
               <Card.Text className="mb-0">{user.title}</Card.Text>
               <Card.Text className="text-secondary my-0">{user.area}</Card.Text>
               <Card.Text className="my-1">
-                <img
-                  src="https://media.licdn.com/dms/image/v2/C4E0BAQHYgix-Ynux1A/company-logo_100_100/company-logo_100_100/0/1646830188798/epicodeschool_logo?e=1748476800&amp;v=beta&amp;t=doTFJx0D6s9OjWg9ZXuLy9TSWloZEUtDzU0J_gPyBJs"
-                  width={32}
-                ></img>
+                <img src="./src/assets/image.png" width={20} className="me-2"></img>
                 EPICODE
               </Card.Text>
             </Container>
