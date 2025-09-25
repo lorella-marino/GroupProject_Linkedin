@@ -76,7 +76,7 @@ const Chat = () => {
               <Dropdown.Item href="#">Posta indesiderata</Dropdown.Item>
             </DropdownButton>
           </InputGroup>
-          <div className="text-center pb-5 mb-5" style={{ height: "550px" }}>
+          <div className="text-center pb-5 mb-5" style={{ height: "400px" }}>
             <Image
               src="https://static.licdn.com/aero-v1/sc/h/eeol4w9o9de2j4gq699mzx79d"
               className=" my-4"
