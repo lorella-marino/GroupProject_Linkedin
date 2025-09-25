@@ -5,6 +5,7 @@ import { PencilSquare, ThreeDots, ChevronCompactDown, Search, Sliders2, ChevronC
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown, DropdownButton, Form, Image, InputGroup } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import placeholderUser from "../../assets/user.jpg";
 
 const Chat = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const Chat = () => {
       >
         <div className="d-flex align-items-center justify-content-between p-2">
           <Image
-            src={user.image}
+            src={user.image ? user.image : placeholderUser}
             roundedCircle
             className=" d-block"
             style={{

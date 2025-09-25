@@ -6,6 +6,7 @@ import { ArrowLeft, Bag, Pencil, PlusLg, Trash3 } from "react-bootstrap-icons";
 import placeholderEsperienze from "../../assets/placeholderEsperienze.svg";
 import EsperienzeModal from "../Esperienze/EsperienzeModal";
 import { useNavigate } from "react-router";
+import placeholderUser from "../../assets/user.jpg";
 
 const EditExperiences = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const EditExperiences = () => {
       method: "DELETE",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => {
@@ -47,7 +48,7 @@ const EditExperiences = () => {
               <Col xs={1}>
                 {
                   <Image
-                    src={user.image}
+                    src={user.image ? user.image : placeholderUser}
                     roundedCircle
                     className=" d-block"
                     style={{

@@ -33,6 +33,7 @@ import { fetchGetPost, fetchJobs, fetchUser } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink, useLocation } from "react-router";
 import { BsFillSlashSquareFill } from "react-icons/bs";
+import placeholderUser from "../../assets/user.jpg";
 
 const CustomNav = () => {
   const user = useSelector((state) => state.user.content);
@@ -175,7 +176,7 @@ const CustomNav = () => {
           <Dropdown className="border-end ">
             <Dropdown.Toggle variant="white" className="text-dark border-0">
               <Image
-                src={user.image}
+                src={user.image ? user.image : placeholderUser}
                 roundedCircle
                 className=" d-block"
                 style={{
@@ -192,7 +193,7 @@ const CustomNav = () => {
                   <div className="d-flex aling-items-center">
                     <div>
                       <Image
-                        src={user.image}
+                        src={user.image ? user.image : placeholderUser}
                         roundedCircle
                         className="me-2 d-block"
                         style={{

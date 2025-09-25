@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { Calendar3, Image, TextIndentLeft } from "react-bootstrap-icons";
 import { useSelector } from "react-redux";
 import ModalePost from "./ModalePost";
+import placeholderUser from "../../assets/user.jpg";
 
 const CreaPost = () => {
   const user = useSelector((state) => state.user.content);
@@ -15,7 +16,7 @@ const CreaPost = () => {
           <div>
             <img
               className="rounded-circle fluid"
-              src={user.image}
+              src={user.image ? user.image : placeholderUser}
               alt=""
               style={{
                 width: "60px",

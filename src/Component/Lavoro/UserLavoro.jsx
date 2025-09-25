@@ -3,6 +3,7 @@ import { ListUl, PencilSquare } from "react-bootstrap-icons";
 import { BsFillBookmarkFill, BsPlus } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
+import placeholderUser from "../../assets/user.jpg";
 
 const UserLavoro = () => {
   const user = useSelector((state) => state.user.content);
@@ -17,7 +18,7 @@ const UserLavoro = () => {
           />
           <div className="userImg2">
             <Image
-              src={user.image}
+              src={user.image ? user.image : placeholderUser}
               fluid
               className="rounded-circle position-relative"
               style={{

@@ -5,6 +5,8 @@ import { BsFillBookmarkFill, BsFillSlashSquareFill, BsPlus } from "react-icons/b
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
 import iconsh from "../../assets/iconsh.png";
+import placeholderUser from "../../assets/user.jpg";
+
 const User = () => {
   const user = useSelector((state) => state.user.content);
   return (
@@ -18,7 +20,7 @@ const User = () => {
           />
           <div className="userImg2">
             <Image
-              src={user.image}
+              src={user.image ? user.image : placeholderUser}
               fluid
               className="rounded-circle position-relative"
               style={{
@@ -27,6 +29,7 @@ const User = () => {
                 objectFit: "cover",
               }}
             ></Image>
+
             <BsPlus className="position-absolute bottom-0 end-0 rounded-circle plusImg2"></BsPlus>
           </div>
           <Card.Body className="mt-4 px-2">

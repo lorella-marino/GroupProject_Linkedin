@@ -20,6 +20,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ModalePost from "./ModalePost";
 import Comments from "./Comments";
 import TextareaAutosize from "react-textarea-autosize";
+import placeholderUser from "../../assets/user.jpg";
 
 const PostCard = (props) => {
   const postComments = useSelector((state) => state.comments.content);
@@ -198,7 +199,7 @@ const PostCard = (props) => {
                 <Col xs={2} md={1} className="d-flex justify-content-center align-items-center">
                   <img
                     className="rounded-circle fluid"
-                    src={user.image}
+                    src={user.image ? user.image : placeholderUser}
                     alt=""
                     style={{
                       width: "40px",
@@ -225,7 +226,7 @@ const PostCard = (props) => {
                 <Col xs={2} md={1} className="d-flex justify-content-center align-items-center">
                   <img
                     className="rounded-circle fluid"
-                    src={user.image}
+                    src={user.image ? user.image : placeholderUser}
                     alt=""
                     style={{
                       width: "40px",

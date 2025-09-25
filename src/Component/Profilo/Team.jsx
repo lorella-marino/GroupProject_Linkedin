@@ -6,6 +6,7 @@ import { BiPencil } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import EditProfilo from "./EditProfilo";
 import PictureModal from "./PictureModal";
+import placeholderUser from "../../assets/user.jpg";
 
 const Team = () => {
   const user = useSelector((state) => state.user.content);
@@ -29,7 +30,7 @@ const Team = () => {
         </Button>
         <div className="userImg">
           <Image
-            src={user.image}
+            src={user.image ? user.image : placeholderUser}
             fluid
             className="rounded-circle position-relative"
             style={{

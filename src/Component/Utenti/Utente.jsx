@@ -3,6 +3,7 @@ import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
 import { useParams } from "react-router";
 import { fetchOtherUser } from "../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
+import placeholderUser from "../../assets/user.jpg";
 
 const Utente = () => {
   const user = useSelector((state) => state.otherUser.content);
@@ -25,7 +26,7 @@ const Utente = () => {
           />
           <div className="userImg">
             <Image
-              src={user.image}
+              src={user.image ? user.image : placeholderUser}
               fluid
               className="rounded-circle position-relative"
               style={{

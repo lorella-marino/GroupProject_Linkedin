@@ -24,7 +24,7 @@ export const fetchProfiles = () => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -45,7 +45,7 @@ export const fetchUser = () => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -67,7 +67,7 @@ export const editUser = (newData) => {
         method: "PUT",
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
           "Content-Type": "application/json",
         },
         body: JSON.stringify(newData),
@@ -94,7 +94,7 @@ export const editUserImage = (file) => {
         method: "POST",
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
         },
         body: formData,
       });
@@ -116,7 +116,7 @@ export const fetchOtherUser = (id) => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -137,7 +137,7 @@ export const fetchGetPost = () => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -158,7 +158,7 @@ export const removePost = (id) => {
       method: "DELETE",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => {
@@ -183,7 +183,7 @@ export const sharePostImage = (postId, file) => {
       method: "POST",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
       body: formData,
     })
@@ -205,7 +205,7 @@ export const fetchSharePost = (testo, file) => {
       method: "POST",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ text: testo }),
@@ -249,7 +249,7 @@ export const fetchExperience = () => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -322,7 +322,7 @@ export const editPost = (postId, testo, file) => {
         method: "PUT",
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ text: testo }),
@@ -347,7 +347,7 @@ export const fetchGetComments = () => {
       method: "GET",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
       },
     })
       .then((resp) => resp.json())
@@ -367,7 +367,7 @@ export const fetchNewComment = (comment, id) => {
       method: "POST",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2JjNGRjY2U3MDMzNzAwMTUzMTZkYjEiLCJpYXQiOjE3NDAzOTM5MzIsImV4cCI6MTc0MTYwMzUzMn0.1t8kxCm5d0UPnuFQqZs9G6-VZkPjsGpIMIhIadrrE4Q",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ1NDJhZGE0ZmIyODAwMTUyZTYxYTciLCJpYXQiOjE3NTg4MDg5MzcsImV4cCI6MTc2MDAxODUzN30.korLrZqJMHQaLXPGyDtdGThk4k1o2bMiGMZsbAJhIKU",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({

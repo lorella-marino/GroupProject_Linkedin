@@ -10,7 +10,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="https://media.licdn.com/dms/image/v2/C510BAQG_1VWEGBmO9A/company-logo_100_100/company-logo_100_100/0/1631353289340?e=1748476800&v=beta&t=hGklvdByfYynRr_VdJqCTEVBdvBL1BLLYXOl6Jizu1Y"
+                src="./src/assets/5968322.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",
@@ -35,7 +35,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="https://media.licdn.com/dms/image/v2/C4E0BAQEooBvMO2kBVg/company-logo_100_100/company-logo_100_100/0/1631311071955?e=1748476800&v=beta&t=jfxXIAMr3fKBhvJDtJua1gVcbRyy_Yfucv-Pem2mrm4"
+                src="./src/assets/stack.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",
@@ -62,7 +62,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="https://media.licdn.com/dms/image/v2/D4E0BAQFWt4Tl53wjZQ/company-logo_100_100/company-logo_100_100/0/1705960989383/docker_logo?e=1748476800&v=beta&t=vU84PKYYfqmgVMruZKRoXx_x_ySVHvG4-iT33rh5uMQ"
+                src="./src/assets/docker.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",

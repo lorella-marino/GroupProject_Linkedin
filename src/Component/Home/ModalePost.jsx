@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Emoji from "./Emoji";
 import { editPost, fetchSharePost } from "../redux/actions";
 import { Form } from "react-bootstrap";
+import placeholderUser from "../../assets/user.jpg";
 
 const ModalePost = (props) => {
   const user = useSelector((state) => state.user.content);
@@ -34,7 +35,7 @@ const ModalePost = (props) => {
         <div className="d-flex align-items-start">
           <img
             className="rounded-circle"
-            src={user.image}
+            src={user.image ? user.image : placeholderUser}
             alt=""
             style={{
               width: "50px",
