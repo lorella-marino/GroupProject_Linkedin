@@ -46,7 +46,7 @@ const Utente = () => {
                 </Card.Text>
               </Col>
               <Col>
-                <img src="./src/assets/image.png" width={20} className="me-2"></img>
+                <img src="./image.png" width={20} className="me-2"></img>
                 EPICODE
               </Col>
             </Row>

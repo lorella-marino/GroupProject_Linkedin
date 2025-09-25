@@ -55,7 +55,7 @@ const Team = () => {
               </Card.Text>
             </Col>
             <Col className="pointer2">
-              <img src="./src/assets/image.png" width={20} className="me-2"></img>
+              <img src="./image.png" width={20} className="me-2"></img>
               EPICODE
             </Col>
           </Row>

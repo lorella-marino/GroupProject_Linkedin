@@ -10,7 +10,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="./src/assets/5968322.png"
+                src="./5968322.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",
@@ -35,7 +35,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="./src/assets/stack.png"
+                src="./stack.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",
@@ -62,7 +62,7 @@ const ConsigliPerTe = () => {
           <Col xs={8} xl={9} className="d-flex pointer">
             <div>
               <Image
-                src="./src/assets/docker.png"
+                src="./docker.png"
                 className="me-2 d-block"
                 style={{
                   width: "50px",

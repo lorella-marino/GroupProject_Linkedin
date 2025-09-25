@@ -38,7 +38,7 @@ const User = () => {
               <Card.Text className="mb-0">{user.title}</Card.Text>
               <Card.Text className="text-secondary my-0">{user.area}</Card.Text>
               <Card.Text className="my-1">
-                <img src="./src/assets/image.png" width={20} className="me-2"></img>
+                <img src="./image.png" width={20} className="me-2"></img>
                 EPICODE
               </Card.Text>
             </Container>
